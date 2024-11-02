@@ -2,8 +2,6 @@ import logo from '../assets/img/Logo.svg';
 import heroImg from '../assets/img/hero.svg';
 import heroLgImg from '../assets/img/hero-lg.svg';
 import cloudImg from '../assets/img/clouds.svg';
-import bus1Img from '../assets/img/bus-1.png';
-import bus2Img from '../assets/img/bus-2.png';
 
 export default function Hero() {
 
