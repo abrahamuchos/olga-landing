@@ -31,8 +31,9 @@
   scroll-behavior: smooth;
 }
 
-body{
+html,body{
   font-family: 'YoungSerif-Regular', serif;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
