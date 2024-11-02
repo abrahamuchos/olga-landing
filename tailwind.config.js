@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontSize:{
+    fontSize: {
       xs: ['12px', '24px'],
       sm: ['14px', '24px'],
       base: ['16px', '24px'],
@@ -17,17 +17,23 @@ export default {
       '3xl': ['50px', '60.91px'],
     },
     extend: {
-      fontFamily:{
+      screens: {
+        '3xl': '2100px'
+      },
+      fontFamily: {
         'Stora': ['Stora', 'sans-serif'],
         'GameOverCre': ['gameovercre1', 'sans-serif'],
         'YoungSerif': ['YoungSerif-Regular', 'sans-serif'],
       },
-      colors:{
+      colors: {
         'blueOlga': '#006AA8',
         'redOlga': '#FF0044',
         'blackOlga': '#1B1B1B',
         'yellowOlga': '#FDCD09',
         'creamOlga': '#FCF4E0',
+      },
+      backgroundImage: {
+        'checkered': "url('assets/img/bg-checkered.svg')"
       }
     },
   },
