@@ -1,3 +1,44 @@
+@font-face {
+  font-family: 'Stora';
+  src: url("assets/fonts/Stora.woff2") format("woff2"),
+       url("assets/fonts/Stora.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gameovercre1";
+  src: url("assets/fonts/gameovercre1.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YoungSerif-Regular';
+  src: url("assets/fonts/YoungSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'YoungSerif-Regular', serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
