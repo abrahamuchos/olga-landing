@@ -9,37 +9,38 @@ import chargeCursorImg from "../assets/img/cursor-chargue.svg";
 export default function Events() {
 
   return (
-    <section className='max-container bg-creamOlga'>
-      {/*Title*/}
-      <div className="flex flex-col items-center w-full py-10 mb-6">
-        <h1 className='text-xl md:text-2xl text-blackOlga text-center mb-6'>Los escuchamos y yendo no, llegando</h1>
-        <h2 className='text-base md:text-xl text-blackOlga text-center'>Te spoileamos a dónde primero...</h2>
-      </div>
-      {/*End Title*/}
-
-      {/*Events*/}
-      <div className="flex justify-center items-center gap-14 py-12 relative
-        max-lg:flex-col"
-      >
-        <div className='max-xl:hidden absolute margin-0 bottom-[88%] left-[89%] z-10'>
-          <img src={chargeCursorImg} alt="cursor cargando" className='w-[62px]'/>
+    <section className='bg-creamOlga'>
+      <div className="max-container">
+        {/*Title*/}
+        <div className="flex flex-col items-center w-full py-10 mb-6">
+          <h1 className='text-xl md:text-2xl text-blackOlga text-center mb-6'>Los escuchamos y yendo no, llegando</h1>
+          <h2 className='text-base md:text-xl text-blackOlga text-center'>Te spoileamos a dónde primero...</h2>
         </div>
+        {/*End Title*/}
 
-        <Card
-          image={{src: paint1Img, alt: "Evento soñé que volaba cover"}}
-          logoSrc={logoEvent1Img}
-          places={["Córdoba", "Santa Fé", "Mendoza"]}
-        />
+        {/*Events*/}
+        <div className="flex justify-center items-center gap-14 py-12 relative
+        max-lg:flex-col"
+        >
+          <div className='max-xl:hidden absolute margin-0 bottom-[88%] left-[89%] z-10'>
+            <img src={chargeCursorImg} alt="cursor cargando" className='w-[62px]'/>
+          </div>
 
-        <Card
-          image={{src: paint2Img, alt: "Evento seria increible cover"}}
-          logoSrc={logoEvent2Img}
-          places={["Salta", "Jujuy", "Formosa"]}
-          ribbonOption='purple'
-        />
+          <Card
+            image={{src: paint1Img, alt: "Evento soñé que volaba cover"}}
+            logoSrc={logoEvent1Img}
+            places={["Córdoba", "Santa Fé", "Mendoza"]}
+          />
+
+          <Card
+            image={{src: paint2Img, alt: "Evento seria increible cover"}}
+            logoSrc={logoEvent2Img}
+            places={["Salta", "Jujuy", "Formosa"]}
+            ribbonOption='purple'
+          />
+        </div>
+        {/*End Events*/}
       </div>
-      {/*End Events*/}
-
     </section>
   );
 }

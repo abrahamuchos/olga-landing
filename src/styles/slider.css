@@ -1,0 +1,120 @@
+.inner-arrow-left {
+  position: relative;
+  top: -20px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #006AA8;
+}
+.inner-arrow-right {
+  position: relative;
+  top: -20px;
+  left: -22px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #006AA8;
+}
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-right: 23px solid black;
+  position: absolute;
+  left: 1%;
+  top: 30%;
+  z-index: 10;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-left: 23px solid black;
+  position: absolute;
+  left: 96%;
+  top: 30%;
+  z-index: 10;
+
+}
+.arrow-right:hover, .arrow-left:hover{
+  cursor: pointer;
+}
+
+.react-multi-carousel-track {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.slick-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list{
+  max-width: 1100px;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 425px){
+  .arrow-right{
+    left: 91%;
+  }
+  .slick-list{
+    max-width: 70%;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .arrow-right{
+    left: 91%;
+  }
+  .arrow-left{
+    left: 3%;
+  }
+  .slick-list{
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .arrow-right{
+    left: 90%;
+  }
+  .arrow-left{
+    left: 5%;
+  }
+  .slick-list{
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+  .arrow-right{
+    left: 94%;
+  }
+  .arrow-left{
+    left: 5%;
+  }
+  .slick-list{
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .arrow-right{
+    left: 88%;
+  }
+  .arrow-left{
+    left: 8%;
+  }
+  .slick-list{
+    max-width: 70%;
+  }
+}
