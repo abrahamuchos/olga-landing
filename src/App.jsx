@@ -1,7 +1,8 @@
-import './App.css'
+import './styles/App.css'
 import Hero from "./components/Hero.jsx";
 import Bus from "./components/Bus.jsx";
 import Events from "./components/Events.jsx";
+import SpecialGuest from "./components/SpecialGuest.jsx";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Hero/>
       <Bus/>
       <Events/>
+      <SpecialGuest/>
     </main>
   )
 }
