@@ -1,5 +1,6 @@
 import Button from "./Button.jsx";
 
+import { tags } from '../constants/index.js';
 import logoGame from '../assets/img/logo-game.png';
 import games from '../assets/img/games.png';
 import controlGames from '../assets/img/control-games.png';
@@ -12,7 +13,7 @@ export default function Games() {
     <section className='bg-creamOlga '>
       <div className="max-container py-10 px-5 flex flex-col gap-10 lg:flex-row">
         {/*Games*/}
-        <div className="bg-white flex w-full flex-col p-5 md:flex-row lg:w-3/4">
+        <div className="bg-white flex w-full flex-col p-5 md:flex-row lg:w-3/5 2xl:3/4">
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
             <img src={logoGame} alt="logo-juego" className='w-[135px] mb-8'/>
             <h2 className='text-xl font-YoungSerif'>Mientras tanto, esperá viciando con nuestros jueguitos</h2>
@@ -35,8 +36,18 @@ export default function Games() {
         {/*End Games*/}
 
         {/*Tags*/}
-        <div className="bg-white h-[200px] flex-1">
-          <h1>2</h1>
+        <div className="bg-white flex-1 p-4">
+          <h2 className='font-YoungSerif text-blackOlga text-xl uppercase mb-4'>Hot Tags</h2>
+          <div className='flex flex-wrap gap-x-4 gap-y-1 items-end'>
+            {tags.map((tag, index) => (
+              <span key={index}
+                    className={`${tag.textStyle} cursor-pointer leading-8 md:leading-10`}
+                    style={{color: `${tag.color}`}}
+              >
+              {tag.name}
+            </span>
+            ))}
+          </div>
         </div>
         {/*End Tags*/}
       </div>

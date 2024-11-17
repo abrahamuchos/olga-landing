@@ -31,6 +31,8 @@ export default {
         'blackOlga': '#1B1B1B',
         'yellowOlga': '#FDCD09',
         'creamOlga': '#FCF4E0',
+        'violetOlga': '#7A47BF',
+        'grayOlga': '#7A7A7A',
       },
       backgroundImage: {
         'checkered': "url('assets/img/bg-checkered.svg')"
