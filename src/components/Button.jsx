@@ -13,7 +13,7 @@ export default function Button({label = 'Click me', className = '', withIcon = f
 
   return (
     <button
-      className={`w-[376px] h-[50px] bg-redOlga text-white text-xl font-GameOverCre flex justify-center items-center leading-none relative ${className}`}>
+      className={`h-[50px] bg-redOlga text-white text-xl font-GameOverCre flex justify-center items-center leading-none relative ${className}`}>
       {label}
       <img src={cursor} className={`absolute right-[10px] top-[20px] ${withIcon ? 'block' : 'hidden'}`} alt="cursor"/>
     </button>
