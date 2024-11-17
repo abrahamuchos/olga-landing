@@ -4,6 +4,7 @@ import Bus from "./components/Bus.jsx";
 import Events from "./components/Events.jsx";
 import SpecialGuest from "./components/SpecialGuest.jsx";
 import Games from "./components/Games.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       <Bus/>
       <Events/>
       <SpecialGuest/>
-      <Games />
+      <Games/>
+      <Footer/>
     </main>
   )
 }
